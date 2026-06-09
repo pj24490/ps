@@ -27,4 +27,4 @@ jobs:
 
       - name: Run pylint
         run: |
-          pylint **/*.py
+          pylint $(find . -name "*.py" -not -path "./.venv/*")
